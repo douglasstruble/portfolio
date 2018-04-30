@@ -1,140 +1,164 @@
 /* Debugging Code */
+
 div,
 div.portitem,
 div.portfeaturebutton,
 div.portfeaturebuttonstack,
-div.case-study{
-/*    border: 1px solid red;*/
+div.case-study {
+    /*    border: 1px solid red;*/
     box-sizing: border-box;
-}/* End debugging code*/
+}
 
+/* End debugging code*/
 
 /* DEFAULTS */
-body{
+
+body {
     padding: 0;
     margin: 0;
 }
+
 div.portitem,
 div.portfeaturebutton,
 div.portfeaturebuttonstack,
-div.case-study{
-  border-bottom: 1px solid #ccc;
+div.case-study {
+    border-bottom: 1px solid #ccc;
     position: relative;
 }
 
-div, p, ul{
+div,
+p,
+ul {
     font-family: 'Quattrocento Sans', sans-serif;
 }
-h1,h2,h3{
-  font-family: 'Oswald', sans-serif;
+
+h1,
+h2,
+h3 {
+    font-family: 'Oswald', sans-serif;
 }
-ul{
-  padding-left: 1em;
+
+ul {
+    padding-left: 1em;
 }
-.text{
+
+.text {
     padding: 1em;
 }
 
-a.button{
-  display: inline-block;
-  background-color: grey;
-  color: white;
-  text-decoration: none;
-  padding: 1em;
-  border-radius: 5px;
+a.button {
+    display: inline-block;
+    background-color: grey;
+    color: white;
+    text-decoration: none;
+    padding: 1em;
+    border-radius: 5px;
 }
-.button.center{
-  margin: 0 auto;
+a.button.small{
+    padding: .5em;
+}
+
+.button.center {
+    margin: 0 auto;
 }
 
 
 /* ELEMENTS */
-#topbar{
-  overflow: auto;
-  border-bottom: 1px solid #ccc;
-  background: white;
+
+#topbar {
+    overflow: hidden;
+    border-bottom: 1px solid #ccc;
+    background: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
 }
-#topbar .logo{
-  float: left;
+
+#topbar .logo {
+    float: left;
 }
-#topbar .logo img{
-  width: 40px;
-  height: auto;
-  display: inline;
-  vertical-align: top;
+
+#topbar .logo img {
+    width: 40px;
+    height: auto;
+    display: inline;
+    vertical-align: top;
 }
-#topbar .logo h2{
-  display: inline;
+
+#topbar .logo h2 {
+    display: inline;
 }
-#topbar .socialbar{
- float: right;
+
+#topbar .socialbar {
+    float: right;
+    margin: 4px 4px 0 4px;
+    padding: 0;
 }
-.sticky {
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  width: auto;
-}
-.sticky + .content {
-  padding-top: 60px;
+
+.content {
+    margin-top: 40px;
 }
 
 
 
-.logo{
-  margin: 0 auto;
-  max-width: 259px;
-  text-align: center;
+.logo {
+    margin: 0 auto;
+    max-width: 259px;
+    text-align: center;
 }
-.socialbar{
-  text-align: center;
+
+.socialbar {
+    text-align: center;
 }
+
 .portitem,
-.description{
-  overflow: auto; /* clearing floats */
+.description {
+    overflow: auto;
+    /* clearing floats */
 }
 
-div.image{
+div.image {
     text-align: center;
 }
 
 .image img,
 .imagestack img,
-.imagebanner img{
-  max-width: 100%;
-  height: auto;
+.imagebanner img {
+    max-width: 100%;
+    height: auto;
 }
 
 
 /* on larger screens, use these, too. */
-@media only screen and (min-width: 740px) {
-  div.quarter{
-    width: 25%;
-    float: left;
-  }
-  div.half{
-    width: 50%;
-    float: left;
-  }
-   div.three-quarters{
-    width: 75%;
-    float: left;
-  }
-  div.image{
-    float: right;
-      text-align: right;
-  }
-    img.spaced-out{
-    padding: 3em 0;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
 
-div.content-bottom{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-}
+@media only screen and (min-width: 740px) {
+    div.quarter {
+        width: 25%;
+        float: left;
+    }
+    div.half {
+        width: 50%;
+        float: left;
+    }
+    div.three-quarters {
+        width: 75%;
+        float: left;
+    }
+    div.image {
+        float: right;
+        text-align: right;
+    }
+    img.spaced-out {
+        padding: 3em 0;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    div.content-bottom {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
 }
