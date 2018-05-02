@@ -5,7 +5,7 @@ div.portitem,
 div.portfeaturebutton,
 div.portfeaturebuttonstack,
 div.case-study {
-    /*    border: 1px solid red;*/
+/*  border: 1px solid red; */
     box-sizing: border-box;
 }
 
@@ -43,7 +43,7 @@ ul {
 }
 
 .text {
-    padding: 1em;
+    padding: 1.5em;
 }
 
 a.button {
@@ -58,8 +58,9 @@ a.button.small{
     padding: .5em;
 }
 
-.button.center {
+.center {
     margin: 0 auto;
+    text-align: center;
 }
 
 
@@ -73,10 +74,7 @@ a.button.small{
     top: 0;
     width: 100%;
     z-index: 10;
-}
-
-#topbar .logo {
-    float: left;
+    padding: 1em;
 }
 
 #topbar .logo img {
@@ -90,17 +88,19 @@ a.button.small{
     display: inline;
 }
 
+#topbar a{
+    text-decoration: none;
+    color: black;
+}
+
 #topbar .socialbar {
-    float: right;
-    margin: 4px 4px 0 4px;
+    margin: .5em;
     padding: 0;
 }
 
 .content {
-    margin-top: 40px;
+    margin-top: 150px; /* to make room for static menu */
 }
-
-
 
 .logo {
     margin: 0 auto;
@@ -114,8 +114,7 @@ a.button.small{
 
 .portitem,
 .description {
-    overflow: auto;
-    /* clearing floats */
+    overflow: auto; /* clearing floats */
 }
 
 div.image {
@@ -133,6 +132,20 @@ div.image {
 /* on larger screens, use these, too. */
 
 @media only screen and (min-width: 740px) {
+    
+    #topbar .logo {
+        float: left;
+    }
+    #topbar .socialbar {
+        float: right;
+        margin: 4px 4px 0 4px;
+        padding: 0;
+    }
+    .content {
+        max-width: 1200px;
+        margin: 80px auto;
+    }
+
     div.quarter {
         width: 25%;
         float: left;
