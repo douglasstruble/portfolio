@@ -128,9 +128,6 @@ div.image {
     height: auto;
 }
 
-
-/* on larger screens, use these, too. */
-
 @media only screen and (min-width: 740px) {
     
     #topbar .logo {
@@ -169,9 +166,23 @@ div.image {
         margin-right: auto;
     }
 
-    div.content-bottom {
-        position: absolute;
-        bottom: 0;
-        right: 0;
-    }
+    #bio .speech{
+    border-bottom: 1px #eee solid;
+    padding: 1.5em 0;
+    margin: 0 1.5em 2em;
+    position: relative;
+	}
+	#bio .speech:after {
+	content: " ";
+	position: absolute;
+	bottom: 0;
+	right: 35%;
+	width: 0;
+	height: 0;
+	border: 20px solid transparent;
+	border-top-color: #dedede;
+	border-bottom: 0;
+	border-right: 0;
+	margin-bottom: -20px;
+}
 }
