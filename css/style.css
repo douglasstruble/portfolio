@@ -1,0 +1,218 @@
+/* Debugging Code */
+
+div,
+div.portitem,
+div.portfeaturebutton,
+div.portfeaturebuttonstack,
+div.project {
+/* 	border: 1px solid red; */
+	box-sizing: border-box;
+}
+
+/* End debugging code*/
+
+/* DEFAULTS */
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+section{
+	border-bottom: 1px solid #ccc;
+	padding: 2em;
+	position: relative;
+	overflow: hidden; /* clearing floats */
+}
+
+section section{
+	padding-left: 0;
+	padding-right: 0;
+}
+
+div,
+p,
+ul {
+    font-family: 'Quattrocento Sans', sans-serif;
+}
+
+h1,
+h2 {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-weight: 100;
+    line-height: 1.3;
+    margin-top: .35em;
+}
+h3 {
+    font-family: 'Oswald', sans-serif;
+    text-transform: lowercase;
+    font-weight: 100;
+    line-height: 1.3;
+    margin-top: .35em;
+}
+
+h1{ font-size: 2.5em; }
+h2{ font-size: 2em; }
+h3{ font-size: 1.5em; }
+
+ul {
+    padding-left: 1em;
+}
+ul.links {
+    list-style: none;
+    padding-left: 0;
+}
+
+.largetext{
+	clear: both;
+	padding: 2em;
+	font-size: 1.5em;
+}
+
+a.button {
+    display: inline-block;
+    background-color: white;
+    color: black;
+    border: 2px solid #ccc;
+    text-decoration: none;
+    padding: 0 .7em;
+    font-family: 'Oswald', sans-serif;
+    font-size: 19px;
+}
+
+.center {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.reveal{
+	padding-top: 7em;
+}
+
+/* ELEMENTS */
+
+#topbar {
+    overflow: hidden;
+    border-bottom: 1px solid #ccc;
+    background: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    padding: 1em 0;
+}
+
+#topbar .logo img {
+    width: 40px;
+    height: auto;
+    display: inline;
+    vertical-align: top;
+}
+
+#topbar .logo h2 {
+    display: inline;
+}
+#topbar h2 .lower {
+    text-transform: lowercase;
+}
+
+#topbar a{
+    text-decoration: none;
+    color: black;
+}
+
+#topbar .socialbar {
+    margin: .5em;
+    padding: 0;
+}
+
+.content {
+    margin-top: 150px; /* to make room for static menu */
+}
+
+.logo {
+    margin: 0 auto;
+    max-width: 259px;
+    text-align: center;
+}
+
+.socialbar {
+    text-align: center;
+}
+
+div.image {
+    text-align: center;
+}
+
+.image img,
+.imagestack img,
+.imagebanner img {
+    max-width: 100%;
+    height: auto;
+}
+
+.imagestack{
+	margin-left: -2em;
+	margin-right: -2em;
+	/* display: block; */
+}
+
+#bio .right{
+	text-align: right;
+	height: 100%;
+}
+
+#bio .bottom img{
+	margin-top: 3em;
+}
+
+.project h1{
+	margin-bottom: 2em;
+}
+
+@media only screen and (min-width: 740px) {
+    
+    #topbar .logo {
+        float: left;
+        margin-left: 1.5em;
+    }
+    #topbar .socialbar {
+        float: right;
+        margin: 4px 1.5em 4px 4px;
+        padding: 0;
+    }
+    .content {
+        max-width: 1200px;
+        margin: 80px auto;
+    }
+
+    div.quarter {
+        width: 25%;
+        float: left;
+    }
+    div.half {
+        width: 50%;
+        float: left;
+    }
+    div.three-quarters {
+        width: 75%;
+        float: left;
+    }
+    div.image {
+        float: right;
+        text-align: right;
+    }
+    img.spaced-out {
+        padding: 3em 0;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+	#bio .bottom img{
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 50%;
+	}
+}
