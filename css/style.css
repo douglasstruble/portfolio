@@ -25,6 +25,11 @@ section{
 	overflow: hidden; /* clearing floats */
 }
 
+section section{
+	padding-left: 0;
+	padding-right: 0;
+}
+
 div,
 p,
 ul {
@@ -139,6 +144,12 @@ div.image {
 .imagebanner img {
     max-width: 100%;
     height: auto;
+}
+
+.imagestack{
+	margin-left: -2em;
+	margin-right: -2em;
+	/* display: block; */
 }
 
 #bio .right{
