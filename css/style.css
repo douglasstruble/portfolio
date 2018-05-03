@@ -4,9 +4,9 @@ div,
 div.portitem,
 div.portfeaturebutton,
 div.portfeaturebuttonstack,
-div.case-study {
-/*  border: 1px solid red; */
-    box-sizing: border-box;
+div.project {
+/* 	border: 1px solid red; */
+	box-sizing: border-box;
 }
 
 /* End debugging code*/
@@ -18,12 +18,12 @@ body {
     margin: 0;
 }
 
-div.portitem,
-div.portfeaturebutton,
-div.portfeaturebuttonstack,
-div.case-study {
-    border-bottom: 1px solid #ccc;
-    position: relative;
+.section{
+	border-bottom: 1px solid #ccc;
+	padding: 2em;
+	margin: 2em;
+	position: relative;
+	overflow: hidden; /* clearing floats */
 }
 
 div,
@@ -41,9 +41,10 @@ h3 {
 ul {
     padding-left: 1em;
 }
-
-.text {
-    padding: 1.5em;
+.largetext{
+	clear: both;
+	padding: 2em;
+	font-size: 1.5em;
 }
 
 a.button {
@@ -52,7 +53,6 @@ a.button {
     color: white;
     text-decoration: none;
     padding: 1em;
-    border-radius: 5px;
 }
 a.button.small{
     padding: .5em;
@@ -63,6 +63,9 @@ a.button.small{
     text-align: center;
 }
 
+.reveal{
+	padding-top: 2em;
+}
 
 /* ELEMENTS */
 
@@ -74,7 +77,7 @@ a.button.small{
     top: 0;
     width: 100%;
     z-index: 10;
-    padding: 1em;
+    padding: 1em 2em;
 }
 
 #topbar .logo img {
@@ -112,11 +115,6 @@ a.button.small{
     text-align: center;
 }
 
-.portitem,
-.description {
-    overflow: auto; /* clearing floats */
-}
-
 div.image {
     text-align: center;
 }
@@ -128,14 +126,49 @@ div.image {
     height: auto;
 }
 
+#bio .speech{
+    border-bottom: 1px #eee solid;
+    margin-bottom: 2em;
+    position: relative;
+}
+#bio .speech:after {
+	content: " ";
+	position: absolute;
+	bottom: 0;
+	right: 35%;
+	width: 0;
+	height: 0;
+	border: 20px solid transparent;
+	border-top-color: #eee;
+	border-bottom: 0;
+	border-right: 0;
+	margin-bottom: -20px;
+}
+
+#bio .right{
+	text-align: right;
+}
+
+.project h1{
+	margin-bottom: 2em;
+}
+
+@media only screen and (min-width: 560px) and (max-width: 740px) {
+	#bio .half{
+		width: 50%;
+        float: left;
+	}
+}
+
 @media only screen and (min-width: 740px) {
     
     #topbar .logo {
         float: left;
+        margin-left: 1.5em;
     }
     #topbar .socialbar {
         float: right;
-        margin: 4px 4px 0 4px;
+        margin: 4px 1.5em 4px 4px;
         padding: 0;
     }
     .content {
@@ -165,24 +198,4 @@ div.image {
         margin-left: auto;
         margin-right: auto;
     }
-
-    #bio .speech{
-    border-bottom: 1px #eee solid;
-    padding: 1.5em 0;
-    margin: 0 1.5em 2em;
-    position: relative;
-	}
-	#bio .speech:after {
-	content: " ";
-	position: absolute;
-	bottom: 0;
-	right: 35%;
-	width: 0;
-	height: 0;
-	border: 20px solid transparent;
-	border-top-color: #dedede;
-	border-bottom: 0;
-	border-right: 0;
-	margin-bottom: -20px;
-}
 }
