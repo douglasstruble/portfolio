@@ -60,8 +60,10 @@ ul.links {
 
 .largetext{
 	clear: both;
-	padding: 2em;
 	font-size: 1.5em;
+}
+.inset{
+	padding: 2em;
 }
 
 a.button {
