@@ -66,6 +66,31 @@ ul.links {
 	padding: 2em;
 }
 
+.section-title{
+	text-align: center;
+	font-size: 1em;
+	color: #ccc;
+
+	position: relative;
+}
+.section-title:before,
+.section-title:after {
+  content: "";
+  position: absolute;
+  height: 10px;
+  border-bottom: 1px solid #ccc;
+  top: 10;
+  width: 80px;
+}
+.section-title:before {
+  right: 5%;
+  margin-right: 15px;
+}
+.section-title:after {
+  left: 5%;
+  margin-left: 15px;
+}
+
 a.button {
     display: inline-block;
     background-color: white;
