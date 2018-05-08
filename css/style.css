@@ -117,14 +117,16 @@ a.button {
 }
 
 #topbar .logo img {
-    width: 40px;
+    width: 60px;
     height: auto;
     display: inline;
     vertical-align: top;
 }
 
 #topbar .logo h2 {
+    padding-left: .2em;
     display: inline;
+    line-height: 2;
 }
 #topbar h2 .lower {
     text-transform: lowercase;
@@ -146,7 +148,7 @@ a.button {
 
 .logo {
     margin: 0 auto;
-    max-width: 259px;
+    max-width: 300px;
     text-align: center;
 }
 
@@ -171,6 +173,7 @@ div.image {
 	/* display: block; */
 }
 
+#bio { min-height: 440px;}
 #bio .right{
 	text-align: right;
 	height: 100%;
