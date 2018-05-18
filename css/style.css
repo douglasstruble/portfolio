@@ -68,6 +68,10 @@ ul.links {
 	padding: 2em;
 }
 
+section section{
+    padding-top: 7em;
+}
+
 .section-title{
 	text-align: left;
 	font-size: 1.5em;
